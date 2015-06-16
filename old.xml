@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<ruleset name="Tango Standard">
+	<description>zhengkai custom coding standard</description>
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+
+	<!-- tab 缩进 -->
+	<rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
+
+	<!-- UNIX 换行 -->
+	<rule ref="Generic.Files.LineEndings">
+		<properties>
+			<property name="eolChar" value="\n"/>
+		</properties>
+	</rule>
+
+	<!-- 每行不超过 80 个字符 -->
+	<rule ref="Generic.Files.LineLength">
+		<properties>
+			<property phpcs-only="true" name="lineLimit" value="80"/>
+			<property phpcbf-only="true" name="lineLimit" value="120"/>
+		</properties>
+	</rule>
+
+	<!-- 类名必须开头大写 -->
+	<rule ref="Squiz.Classes.ValidClassName"/>
+
+	<!-- 所有常量大写 -->
+	<rule ref="Generic.NamingConventions.UpperCaseConstantName"/>
+
+	<!-- 方法名用骆驼 -->
+	<rule ref="Generic.NamingConventions.CamelCapsFunctionName"/>
+
+	<!-- 行尾空白 -->
+	<rule ref="Squiz.WhiteSpace.SuperfluousWhitespace"/>
+
+	<!-- 文件尾空行 -->
+	<rule ref="Generic.Files.EndFileNewline"/>
+
+	<!-- 数组必须用 [] 而不能用 array() -->
+	<rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
+
+	<!-- 函数如果没有参数，() 里不应该有空格 -->
+	<!-- TODO -->
+
+	<!-- 花括号在行尾 -->
+	<rule ref="Generic.Functions.OpeningFunctionBraceKernighanRitchie"/>
+
+	<rule ref="Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma"/>
+	<rule ref="Generic.Functions.CallTimePassByReference"/>
+</ruleset>
