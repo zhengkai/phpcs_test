@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<ruleset name="FunPlus">
+    <description>FunPlus Coding Standards</description>
+
+    <rule ref="FunPlus.Classes.OpeningClassBraceKernighanRitchie"/>
+
+</ruleset>

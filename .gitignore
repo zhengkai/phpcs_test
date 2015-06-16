@@ -1,0 +1,10 @@
+composer.json
+/composer.lock
+/vendor/
+
+LICENSE
+README.md
+README.rst
+.editorconfig
+.travis.yml
+*.bat
