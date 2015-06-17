@@ -9,6 +9,10 @@ $a = 1+2;
 $b= 'c';
 $b ='c';
 
+$c = (int) $b;
+$c = (int)$b;
+$c = (int )$b;
+
 for ($i=0;$i<10;$i++) {
 	echo $i.'abc';
 	echo $i,'abc';
