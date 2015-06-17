@@ -1,4 +1,4 @@
 [submodule "vendor"]
 	path = vendor
-	url = sonia:/git/phpcs.git
+	url = git@github.com:zhengkai/phpcs_test.git
 	branch = vendor
