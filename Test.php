@@ -9,6 +9,11 @@ $a = 1+2;
 $b= 'c';
 $b ='c';
 
+for ($i=0;$i<10;$i++) {
+	echo $i.'abc';
+	echo $i,'abc';
+}
+
 function abc1($a=1, $b=2) {
 	echo 'def';
 }

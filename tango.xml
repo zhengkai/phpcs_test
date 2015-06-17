@@ -33,7 +33,7 @@
 	<rule ref="Squiz.Classes.ValidClassName"/>
 
 	<!-- 所有常量大写 -->
-	<rule name="Generic.PHP.UpperCaseConstant"/>
+	<rule ref="Generic.PHP.UpperCaseConstant"/>
 	<rule ref="Generic.NamingConventions.UpperCaseConstantName"/>
 
 	<!-- 方法名用骆驼 -->
@@ -55,9 +55,13 @@
 		</properties>
 	</rule>
 
+	<!-- 运算符两侧要有空格 -->
+	<rule ref="Squiz.WhiteSpace.OperatorSpacing"/>
+
+
+
 	<!-- 显式声明成员修饰符 -->
 	<rule ref="Squiz.Scope.MemberVarScope"/>
 	<rule ref="Squiz.Scope.MethodScope"/>
-
 
 </ruleset>
