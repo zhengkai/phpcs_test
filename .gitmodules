@@ -1,0 +1,4 @@
+[submodule "vendor"]
+	path = vendor
+	url = sonia:/git/phpcs.git
+	branch = vendor
