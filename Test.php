@@ -46,13 +46,26 @@ function abc6()
 	echo 'def';
 }
 
-class TestClassA
-{
+class TestClassA {
 
 }
 
-class TestClassA {
+class TestClassB
+{
 
+	public function abc() {
+		if ($a > 1) {
+			echo 'yes';
+		}
+		if($a>1) {
+			echo 'yes';
+		}
+		if($a   >   1) {
+			echo 'yes';
+		}
+
+		$s=new     StdClass();
+	}
 }
 
 $a = 'dfsadfasdf1111111111111111111111111111111111111111111111111111111111111';

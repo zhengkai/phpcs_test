@@ -65,10 +65,13 @@
 	<rule ref="Generic.Formatting.NoSpaceAfterCast"/>
 	<rule ref="Squiz.WhiteSpace.CastSpacing"/>
 
-	<!-- 结尾分号前不能有空白 -->
+	<!-- 结尾分号前不能有空格 -->
 	<rule ref="Squiz.WhiteSpace.SemicolonSpacing"/>
 
 	<!-- 方法调用（->）不能有空格 -->
 	<rule ref="Squiz.WhiteSpace.ObjectOperatorSpacing"/>
+
+	<!-- new 不能有太多空格，echo 之后必须有空格 -->
+	<rule ref="Squiz.WhiteSpace.LanguageConstructSpacing"/>
 
 </ruleset>
