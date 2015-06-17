@@ -65,4 +65,7 @@
 	<rule ref="Generic.Formatting.NoSpaceAfterCast"/>
 	<rule ref="Squiz.WhiteSpace.CastSpacing"/>
 
+	<!-- 结尾分号前不能有空白 -->
+	<rule ref="Squiz.WhiteSpace.SemicolonSpacing"/>
+
 </ruleset>
