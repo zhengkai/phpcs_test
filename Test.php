@@ -1,5 +1,11 @@
 <?php
 
+$l = array_Map(function ($s) {
+	return 'b';
+}, [1,2,3]);
+
+print_r ($l );
+
 $f = TRUE;
 $f = true;
 

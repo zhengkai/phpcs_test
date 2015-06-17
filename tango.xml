@@ -74,4 +74,10 @@
 	<!-- new 不能有太多空格，echo 之后必须有空格 -->
 	<rule ref="Squiz.WhiteSpace.LanguageConstructSpacing"/>
 
+	<!-- 禁用 global -->
+	<rule ref="Squiz.PHP.GlobalKeyword"/>
+
+	<!-- 内置函数全部小写 -->
+	<rule ref="Squiz.PHP.LowercasePHPFunctions"/>
+
 </ruleset>
