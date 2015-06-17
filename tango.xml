@@ -68,4 +68,7 @@
 	<!-- 结尾分号前不能有空白 -->
 	<rule ref="Squiz.WhiteSpace.SemicolonSpacing"/>
 
+	<!-- 方法调用（->）不能有空格 -->
+	<rule ref="Squiz.WhiteSpace.ObjectOperatorSpacing"/>
+
 </ruleset>
