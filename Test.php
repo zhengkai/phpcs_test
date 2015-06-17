@@ -1,5 +1,8 @@
 <?php
 
+$f = TRUE;
+$f = true;
+
 $a = [];
 
 $a = 1+2;
@@ -13,6 +16,7 @@ function abc1($a=1, $b=2) {
 function abc1($a = 1, $b = 2) {
 	echo 'def';
 }
+
 function abc1( $a = 1) {
 	echo 'def';
 }
@@ -30,7 +34,12 @@ function abc4()
 	echo 'def';
 }
 
-class Test {
+class TestClassA
+{
+
+}
+
+class TestClassA {
 
 }
 
