@@ -14,12 +14,17 @@ $a = [];
 $foo->$bar = 1;
 
 $a = 1 + 2;
+
 $b = 'c';
+
 $b = 'c';
+
 $b = 'c';
 
 $c = (int)$b;
+
 $c = (int)$b;
+
 $c = (int)$b;
 
 for ($i = 0; $i < 10; $i++) {
@@ -29,16 +34,17 @@ for ($i = 0; $i < 10; $i++) {
 
 function abc1($a = 1, $b = 2)
 {
-	echo 'def';
+	echo 'def',$a,$b;
 }
 
 function abc2($a = 1, $b = 2)
 {
-	echo 'def';
+	echo 'def'.$a;
 }
 
 function abc3($a = 1)
 {
+	$a = 'abc';
 	echo 'def';
 }
 
@@ -81,4 +87,4 @@ class TestClassB
 	}
 }
 
-$a = 'dfsadfasdf1111111111111111111111111111111111111111111111111111111111111';
+$a = 'dfsadfasdf1111111111111111111111111111111111111111111111111111111111111  123';

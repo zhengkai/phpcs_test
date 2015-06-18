@@ -80,4 +80,19 @@
 	<!-- 内置函数全部小写 -->
 	<rule ref="Squiz.PHP.LowercasePHPFunctions"/>
 
+	<!-- 禁止一行多个分号的给多个值赋值 -->
+	<rule ref="Generic.Formatting.DisallowMultipleStatements"/>
+
+	<!-- if 等结构必须有花括号，且不得写成一行 -->
+	<rule ref="Generic.ControlStructures.InlineControlStructure"/>
+
+	<!-- 提示函数有没用到的参数 -->
+	<rule ref="Generic.CodeAnalysis.UnusedFunctionParameter"/>
+
+	<!-- 多余的 final 关键字 -->
+	<rule ref="Generic.CodeAnalysis.UnnecessaryFinalModifier"/>
+
+	<!-- 多余的 ?> -->
+	<rule ref="Zend.Files.ClosingTag"/>
+
 </ruleset>
