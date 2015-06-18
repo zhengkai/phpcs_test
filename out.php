@@ -4,7 +4,7 @@ $l = array_map(function ($s) {
 	return 'b';
 }, [1,2,3]);
 
-print_r($l);
+print_r ($l );
 
 $f = TRUE;
 $f = TRUE;
@@ -27,61 +27,54 @@ $c = (int)$b;
 
 $c = (int)$b;
 
-for ($i = 0; $i < 10; $i++) {
+for ($i = 0;$i < 10;$i++) {
 	echo $i.'abc';
 	echo $i,'abc';
 }
 
-function abc1($a = 1, $b = 2)
-{
+function abc1($a = 1, $b = 2) {
 	echo 'def',$a,$b;
 }
 
-function abc2($a = 1, $b = 2)
-{
+function abc2($a = 1, $b = 2) {
 	echo 'def'.$a;
 }
 
-function abc3($a = 1)
-{
+function abc3($a = 1) {
 	$a = 'abc';
 	echo 'def';
 }
 
-function abc4()
-{
+function abc4() {
 	echo 'def';
 }
 
-function abc5()
-{
+function abc5() {
 	echo 'def';
 }
 
-function abc6()
-{
+function abc6() {
+
 	echo 'def';
 }
 
-class TestClassA
-{
+class TestClassA {
 
 }
 
 class TestClassB
 {
 
-	public function abc()
-	{
+	public function abc() {
 		if ($a > 1) {
 			echo 'yes';
 		}
-		if ($a > 1) {
+		if($a > 1) {
 			echo 'yes';
 		}
-		if ($a > 1) {
+		if($a > 1) {
 			echo 'yes';
-		}
+	 }
 
 		$s = new StdClass();
 	}

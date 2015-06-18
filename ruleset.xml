@@ -1,14 +1,6 @@
 <?xml version="1.0"?>
 <ruleset name="Tango Standard">
 	<description>zhengkai custom coding standard</description>
-	<exclude-pattern>*/vendor/*</exclude-pattern>
-
-	<rule ref="PSR2">
-		<exclude name="Generic.WhiteSpace.DisallowTabIndent"/>
-		<exclude name="PSR1.Classes.ClassDeclaration"/>
-		<exclude name="PSR1.Files.SideEffects"/>
-		<exclude name="Generic.PHP.LowerCaseConstant"/>
-	</rule>
 
 	<!-- tab 缩进 -->
 	<rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
@@ -86,13 +78,22 @@
 	<!-- if 等结构必须有花括号，且不得写成一行 -->
 	<rule ref="Generic.ControlStructures.InlineControlStructure"/>
 
+	<!-- 右花括号 } 必须单起一行 -->
+	<rule ref="Squiz.WhiteSpace.ScopeClosingBrace"/>
+
 	<!-- 提示函数有没用到的参数 -->
 	<rule ref="Generic.CodeAnalysis.UnusedFunctionParameter"/>
+
+	<!-- 方法名相关（static 最后，final 最前，抽象类必须可见，不可见的必须下划线前缀） -->
+	<rule ref="PSR2.Methods.MethodDeclaration"/>
 
 	<!-- 多余的 final 关键字 -->
 	<rule ref="Generic.CodeAnalysis.UnnecessaryFinalModifier"/>
 
 	<!-- 多余的 ?> -->
 	<rule ref="Zend.Files.ClosingTag"/>
+
+	<!-- 花括号在行尾而不是新起一行 -->
+	<rule ref="Generic.Functions.OpeningFunctionBraceKernighanRitchie"/>
 
 </ruleset>
