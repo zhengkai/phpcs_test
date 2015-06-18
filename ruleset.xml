@@ -33,7 +33,7 @@
 	<!-- 方法名用骆驼 -->
 	<rule ref="Generic.NamingConventions.CamelCapsFunctionName"/>
 
-	<!-- 行尾空白 -->
+	<!-- 行尾禁止多余 -->
 	<rule ref="Squiz.WhiteSpace.SuperfluousWhitespace">
 		<properties>
 			<property name="ignoreBlankLines" value="true"/>
