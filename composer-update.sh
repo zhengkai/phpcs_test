@@ -24,24 +24,24 @@ if [ -z "$VENDOR_GIT" ]; then
 	VENDOR_GIT=`git config --get remote.origin.url`
 fi
 
-echo 'vendor git url: '$VENDOR_GIT' '$VENDOR_BRANCH
+echo 'vendor git url: '${VENDOR_GIT}' '${VENDOR_BRANCH}
 echo
 
-if [ ! -d $VENDOR_DIR ]; then
-	if [ -e $VENDOR_DIR ]; then
-		echo 'ERROR: '$VENDOR_DIR' is not a directory'
+if [ ! -d ${VENDOR_DIR} ]; then
+	if [ -e ${VENDOR_DIR} ]; then
+		echo 'ERROR: '${VENDOR_DIR}' is not a directory'
 		exit 1
 	fi
-	git clone --single-branch --depth 1 -b $VENDOR_BRANCH $VENDOR_GIT $VENDOR_DIR
+	git clone --single-branch --depth 1 -b ${VENDOR_BRANCH} ${VENDOR_GIT} ${VENDOR_DIR}
 fi
 
-cd $VENDOR_DIR
+cd ${VENDOR_DIR}
 
 git co .
 git clean -df
-if [ -z "`git branch | grep -x \"\\*\\ $VENDOR_BRANCH\"`" ]; then
-	echo git checkout $VENDOR_BRANCH
-	git checkout $VENDOR_BRANCH
+if [ -z "`git branch | grep -x \"\\*\\ ${VENDOR_BRANCH}\"`" ]; then
+	echo git checkout ${VENDOR_BRANCH}
+	git checkout ${VENDOR_BRANCH}
 fi
 git pull --rebase
 
@@ -64,7 +64,7 @@ fi
 find -depth -empty -type d -not -path './.git*' -exec rm -r {} \;
 
 DATE=`date --date='TZ="Asia/Shanghai" now' +'%Y-%m-%d %H:%M:%S'`
-echo $DATE
+echo ${DATE}
 
 # # for debug
 # echo $DATE > datetime.txt

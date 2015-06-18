@@ -62,8 +62,7 @@ class TestClassA {
 
 }
 
-class TestClassB
-{
+class TestClassB {
 
 	public function abc() {
 		if ($a > 1) {

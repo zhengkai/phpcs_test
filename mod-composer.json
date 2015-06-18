@@ -1,6 +1,6 @@
 {
 	"require": {
-		"wp-coding-standards/wpcs": "*"
+		"fp-coding-standards/fpcs": "dev-master"
 	},
 	"autoload": {
 		"psr-4": {

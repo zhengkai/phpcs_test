@@ -23,6 +23,9 @@
 	<!-- 类名必须开头大写 -->
 	<rule ref="Squiz.Classes.ValidClassName"/>
 
+    <!-- class 类名 括号{ 必须在同一行 -->
+    <rule ref="FunPlus.Classes.OpeningClassBraceKernighanRitchie"/>
+
 	<!-- 所有常量大写 -->
 	<rule ref="Generic.PHP.UpperCaseConstant"/>
 	<rule ref="Generic.NamingConventions.UpperCaseConstantName"/>

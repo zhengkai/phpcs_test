@@ -1,6 +1,6 @@
 /tmp-vendor/
 /out.php.diff
-
+.idea/
 /.buildpath
 /.project
 /.settings
