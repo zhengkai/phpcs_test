@@ -70,8 +70,9 @@ class TestClassB
 		if($a>1) {
 			echo 'yes';
 		}
-		if($a   >   1)
+		if($a   >   1) {
 			echo 'yes';
+		}
 
 		$s=new     StdClass();
 	}

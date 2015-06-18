@@ -7,7 +7,7 @@ cd $(dirname `readlink -f $0`)
 cp demo.php out.php
 
 ./vendor/bin/phpcbf \
-	--standard=tango.xml \
+	--standard=ruleset.xml \
 	out.php \
 	&& echo && echo 'check ok'
 
@@ -20,6 +20,6 @@ else
 fi
 
 ./vendor/bin/phpcs \
-	--standard=tango.xml \
+	--standard=ruleset.xml \
 	out.php \
 	&& echo && echo 'check ok'

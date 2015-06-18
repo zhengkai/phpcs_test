@@ -74,7 +74,7 @@ class TestClassB
 		}
 		if($a > 1) {
 			echo 'yes';
-	 }
+		}
 
 		$s = new StdClass();
 	}

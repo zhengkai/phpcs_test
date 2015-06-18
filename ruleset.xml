@@ -31,7 +31,20 @@
 	<rule ref="Generic.NamingConventions.CamelCapsFunctionName"/>
 
 	<!-- 行尾空白 -->
-	<rule ref="Squiz.WhiteSpace.SuperfluousWhitespace"/>
+	<rule ref="Squiz.WhiteSpace.SuperfluousWhitespace">
+		<properties>
+			<property name="ignoreBlankLines" value="true"/>
+		</properties>
+	</rule>
+	<rule ref="Squiz.WhiteSpace.SuperfluousWhitespace.StartFile">
+		<severity>0</severity>
+	</rule>
+	<rule ref="Squiz.WhiteSpace.SuperfluousWhitespace.EndFile">
+		<severity>0</severity>
+	</rule>
+	<rule ref="Squiz.WhiteSpace.SuperfluousWhitespace.EmptyLines">
+		<severity>0</severity>
+	</rule>
 
 	<!-- 文件尾空行 -->
 	<rule ref="Generic.Files.EndFileNewline"/>
@@ -52,6 +65,7 @@
 	<!-- 显式声明成员修饰符 -->
 	<rule ref="Squiz.Scope.MemberVarScope"/>
 	<rule ref="Squiz.Scope.MethodScope"/>
+	<rule ref="Squiz.WhiteSpace.ScopeKeywordSpacing"/>
 
 	<!-- 类型转换（开头有 (string) 之类的）里面和后面不能有空格 -->
 	<rule ref="Generic.Formatting.NoSpaceAfterCast"/>
@@ -95,5 +109,11 @@
 
 	<!-- 花括号在行尾而不是新起一行 -->
 	<rule ref="Generic.Functions.OpeningFunctionBraceKernighanRitchie"/>
+
+	<!-- 空格检查（if while for foreach do 等） -->
+	<rule ref="PEAR.ControlStructures.ControlSignature"/>
+
+	<!-- 参数默认值必须放最后 -->
+	<rule ref="PEAR.Functions.ValidDefaultValue"/> 
 
 </ruleset>
