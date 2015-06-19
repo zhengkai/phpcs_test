@@ -58,8 +58,6 @@ fi
 
 cd ${VENDOR_TMP_DIR}
 
-composer update
-
 git co .
 git clean -df
 if [ -z "`git branch | grep -x \"\\*\\ ${VENDOR_BRANCH}\"`" ]; then
@@ -74,7 +72,7 @@ echo
 echo '                   'run composer update
 echo
 
-# composer update
+composer update
 
 if [ -d vendor ]; then
 	cp -R vendor/* ./
@@ -115,7 +113,7 @@ CHECK_AUTOLOAD_ONLY=`git status --porcelain 2>&1 \
 	| grep -v '^\ M\ autoload\.php$' \
 	| grep -v '^\ M\ composer/autoload_real\.php$' \
 	`
-if [ -z "$CHECK_AUTOLOAD_ONLY" ] && [ "$CHANGE" -eq 2  ]; then
+if [ -z "$CHECK_AUTOLOAD_ONLY" ] && [ "$CHANGE" -eq 2 ]; then
 	echo
 	echo '           only autoload class name changed, restore'
 	echo
@@ -124,8 +122,6 @@ if [ -z "$CHECK_AUTOLOAD_ONLY" ] && [ "$CHANGE" -eq 2  ]; then
 	cp composer/autoload_real.php vendor/composer/autoload_real.php
 	exit
 fi
-
-exit
 
 git add .
 git commit -m "$DATE"
