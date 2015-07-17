@@ -1,0 +1,110 @@
+diff --git a/demo.php b/out.php
+index 8d55bbf..66ee952 100644
+--- a/demo.php
++++ b/out.php
+@@ -1,58 +1,60 @@
+ <?php
+ 
+-$l = array_Map(function ($s) {
++$l = array_map(function ($s) {
+ 	return 'b';
+ }, [1,2,3]);
+ 
+ print_r ($l );
+ 
+ $f = TRUE;
+-$f = true;
++$f = TRUE;
+ 
+ $a = [];
+ 
+-$foo -> $bar = 1;
++$foo->$bar = 1;
+ 
+-$a = 1+2;
++$a = 1 + 2;
+ 
+-$b= 'c';
++$b = 'c';
+ 
+-$b ='c';
++$b = 'c';
+ 
+-$b = 'c' ;
++$b = 'c';
+ 
+-$c = (int) $b;
++$c = (int)$b;
+ 
+-$c = (int)$b ;
++$c = (int)$b;
+ 
+-$c = (int )$b;
++$c = (int)$b;
+ 
+-for ($i=0;$i<10;$i++) {
++for ($i = 0;$i < 10;$i++) {
+ 	echo $i.'abc';
+ 	echo $i,'abc';
+ }
+ 
+-function abc1($a=1, $b=2) { echo 'def',$a,$b; }
++function abc1($a = 1, $b = 2) {
++	echo 'def',$a,$b;
++}
+ 
+ function abc2($a = 1, $b = 2) {
+ 	echo 'def'.$a;
+ }
+ 
+-function abc3( $a = 1) {
++function abc3($a = 1) {
+ 	$a = 'abc';
+ 	echo 'def';
+ }
+ 
+-function abc4( ) {
++function abc4() {
+ 	echo 'def';
+ }
+ 
+-function abc5(){
++function abc5() {
+ 	echo 'def';
+ }
+ 
+-function abc6()
+-{
++function abc6() {
++
+ 	echo 'def';
+ }
+ 
+@@ -60,23 +62,21 @@ class TestClassA {
+ 
+ }
+ 
+-class TestClassB
+-{
++class TestClassB {
+ 
+ 	public function abc() {
+ 		if ($a > 1) {
+ 			echo 'yes';
+ 		}
+-		if($a>1) {
++		if($a > 1) {
+ 			echo 'yes';
+ 		}
+-		if($a   >   1) {
++		if($a > 1) {
+ 			echo 'yes';
+ 		}
+ 
+-		$s=new     StdClass();
++		$s = new StdClass();
+ 	}
+ }
+ 
+ $a = 'dfsadfasdf1111111111111111111111111111111111111111111111111111111111111  123';
+-?>
